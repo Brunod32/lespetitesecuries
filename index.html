@@ -3,70 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style/styles.css" />
     <title>Les Petites Ecuries</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="pension.html">Pension et Produits</a>
-      <a href="contact.html">Contact</a>
-      <a
-        href="https://www.facebook.com/?locale=fr_FR"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img class="social-icon" src="assets/facebook.png" alt="Facebook" />
-      </a>
-      <a
-        href="https://www.instagram.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img class="social-icon" src="assets/instagram.png" alt="Instagram" />
-      </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Accueil">
+            <img
+                class="logo"
+                src="assets/logo.jpg"
+                alt="Logo"
+            />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end w-100">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" title="Accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pension.html" title="Pension et Produits">
+                        Pension et Produits
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html" title="Contact">
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="https://www.facebook.com/?locale=fr_FR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                        class="social-icon"
+                        src="assets/facebook.png"
+                        alt="Facebook"
+                        title="Facebook"
+                        />
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                        class="social-icon"
+                        src="assets/instagram.png"
+                        alt="Instagram"
+                        title="Instagram"
+                        />
+                    </a>
+                </li>
+                </li>
+            </ul>
+        </div>
+      </div>
     </nav>
-    <h1>Les Petites Ecuries</h1>
 
-    <h2>Bienvenue sur le site des petites écuries à Combourg.</h2>
 
-    <p>
-      Idéalement situées à seulement 5 km du centre ville dans un cadre préservé
-      calme et resté naturel. Pensé pour répondre aux besoins fondamentaux et au
-      bien être de cheval, c'est l'endroit parfait si vous cherchez pour lui, un
-      hébergement de qualité. Sur place, retrouvez différentes formules de
-      pensions. Vous serez accueillis par Sophie et François Reuste, cavaliers
-      amateurs et enseignants d'équitation avec plus de 20 ans d'expérience.
-    </p>
+    <div class="container">
+        <h2 class="text-center mb-5">Bienvenue sur le site des petites écuries à Combourg</h2>
 
-    <p>
-      Le mot de Sophie :<br />
-      « Tombée dans la marmite dès l'âge de 5 ans, les chevaux ont toujours fait
-      partie de ma vie. Ceux qui m'ont donné le goût du métier ne sont autres
-      que Olivier puis Joseph LE VOT ainsi que Charles Henri BASQUIN. J'ai
-      pratiqué le saut d'obstacles en compétition jusqu'en 125 avec mon fidèle
-      Diego. En 2006 je deviens monitrice d'équitation et en 2010 j'ouvre ma
-      propre école à Combourg. Une magnifique expérience faite de rencontres ce
-      qui m'amène à vouloir explorer la dimension humaine. Ainsi je marque une
-      pause dans ma carrière et je deviens infirmière en 2025. Aujourd'hui, mon
-      ambition est de continuer à faire vivre ce magnifique lieu en faisant
-      évoluer ma pratique vers un modèle plus respectueux des besoins du cheval
-      afin d'améliorer l'harmonie des relations cheval/humain.»
-    </p>
+        <p>
+            Idéalement situées à seulement 5 km du centre ville dans un cadre préservé
+            calme et resté naturel. Pensé pour répondre aux besoins fondamentaux et au
+            bien être de cheval, c'est l'endroit parfait si vous cherchez pour lui, un
+            hébergement de qualité. Sur place, retrouvez différentes formules de
+            pensions. Vous serez accueillis par Sophie et François Reuste, cavaliers
+            amateurs et enseignants d'équitation avec plus de 20 ans d'expérience.
+        </p>
 
-    <p>
-      Le mot de François :<br />
-      « J'ai découvert l'équiation à 15 ans, en Normandie, berceau du cheval de
-      sport. Très vite je sors en CSO et j'ai été séduit par l'élevage. J'ai
-      donc fait l'acquisition d'une poulinière qui me donnera 2 filles dont
-      l'aînée Lettrine deviendra ma jument de coeur, jument d'une vie. Ensemble
-      nous gagnerons de nombreuses épreuves et décrocherons le titre de champion
-      de France en Puis je me suis lancé dans l'aventure poney club aux côtés de
-      Sophie. Construction, aménagements, clôtures, coaching des élèves en CSO
-      et en concours complet. La polyvalence est mon leitmotiv. J'aime les
-      projets et les défis notamment pour évoluer la structure afin de la rendre
-      chaleureuse et fanctionnelle pour vous, sécurisante et confortable pour
-      votre compagnon.»
-    </p>
+        <p>
+            Le mot de Sophie :<br />
+            « Tombée dans la marmite dès l'âge de 5 ans, les chevaux ont toujours fait
+            partie de ma vie. Ceux qui m'ont donné le goût du métier ne sont autres
+            que Olivier puis Joseph LE VOT ainsi que Charles Henri BASQUIN. J'ai
+            pratiqué le saut d'obstacles en compétition jusqu'en 125 avec mon fidèle
+            Diego. En 2006 je deviens monitrice d'équitation et en 2010 j'ouvre ma
+            propre école à Combourg. Une magnifique expérience faite de rencontres ce
+            qui m'amène à vouloir explorer la dimension humaine. Ainsi je marque une
+            pause dans ma carrière et je deviens infirmière en 2025. Aujourd'hui, mon
+            ambition est de continuer à faire vivre ce magnifique lieu en faisant
+            évoluer ma pratique vers un modèle plus respectueux des besoins du cheval
+            afin d'améliorer l'harmonie des relations cheval/humain.»
+        </p>
+
+        <p>
+            Le mot de François :<br />
+            « J'ai découvert l'équiation à 15 ans, en Normandie, berceau du cheval de
+            sport. Très vite je sors en CSO et j'ai été séduit par l'élevage. J'ai
+            donc fait l'acquisition d'une poulinière qui me donnera 2 filles dont
+            l'aînée Lettrine deviendra ma jument de coeur, jument d'une vie. Ensemble
+            nous gagnerons de nombreuses épreuves et décrocherons le titre de champion
+            de France en Puis je me suis lancé dans l'aventure poney club aux côtés de
+            Sophie. Construction, aménagements, clôtures, coaching des élèves en CSO
+            et en concours complet. La polyvalence est mon leitmotiv. J'aime les
+            projets et les défis notamment pour évoluer la structure afin de la rendre
+            chaleureuse et fonctionnelle pour vous, sécurisante et confortable pour
+            votre compagnon.»
+        </p>
+    </div>
   </body>
 </html>

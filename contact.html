@@ -3,60 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style/styles.css" />
     <title>Les Petites Ecuries</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="pension.html">Pension et Produits</a>
-      <a href="contact.html">Contact</a>
-      <a
-        href="https://www.facebook.com/?locale=fr_FR"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img class="social-icon" src="assets/facebook.png" alt="Facebook" />
-      </a>
-      <a
-        href="https://www.instagram.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img class="social-icon" src="assets/instagram.png" alt="Instagram" />
-      </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Accueil">
+            <img
+                class="logo"
+                src="assets/logo.jpg"
+                alt="Logo"
+            />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end w-100">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" title="Accueil">
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pension.html" title="Pension et Produits">
+                        Pension et Produits
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html" title="Contact">
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="https://www.facebook.com/?locale=fr_FR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                        class="social-icon"
+                        src="assets/facebook.png"
+                        alt="Facebook"
+                        title="Facebook"
+                        />
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                        class="social-icon"
+                        src="assets/instagram.png"
+                        alt="Instagram"
+                        title="Instagram"
+                        />
+                    </a>
+                </li>
+                </li>
+            </ul>
+        </div>
+      </div>
     </nav>
 
-    <h1>Retrouvez-nous sur les réseaux</h1>
+	<div class="container">
+		<h2 class="text-center">Retrouvez-nous sur les réseaux</h2>
 
-    <div class="social-links">
-      <a
-        href="https://www.facebook.com/poneyclub.decombourg"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/facebook.png" alt="Facebook" />
-      </a>
+		<div class="social-links">
+		<a
+			href="https://www.facebook.com/poneyclub.decombourg"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<img src="assets/facebook.png" alt="Facebook" />
+		</a>
 
-      <a
-        href="https://www.instagram.com/ecuriessophie/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/instagram.png" alt="Instagram" />
-      </a>
-    </div>
+		<a
+			href="https://www.instagram.com/ecuriessophie/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<img src="assets/instagram.png" alt="Instagram" />
+		</a>
+		</div>
 
-    <div class="localisation">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54983.72610096655!2d-1.7352792401258552!3d48.38183767381929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ec13b60589475%3A0x285a3e3512be6d1d!2sLes%20petites%20%C3%A9curies!5e0!3m2!1sfr!2sfr!4v1757360966882!5m2!1sfr!2sfr"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
+		<div class="localisation">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54983.72610096655!2d-1.7352792401258552!3d48.38183767381929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ec13b60589475%3A0x285a3e3512be6d1d!2sLes%20petites%20%C3%A9curies!5e0!3m2!1sfr!2sfr!4v1757360966882!5m2!1sfr!2sfr"
+			width="600"
+			height="450"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"
+		></iframe>
+		</div>
+	</div>
   </body>
 </html>
