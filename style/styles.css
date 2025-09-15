@@ -11,6 +11,56 @@ nav .social-icon {
   height: 24px;
 }
 
+/* home page */
+.presentation > p {
+  padding: 50px 0;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background-color: coral;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.word-of > div {
+  padding: 50px 50px;
+  margin: 150px 100px;
+  background-color: #f9f9f9;
+  border: 2px solid #222;
+  border-radius: 30px 30px 30px 60px;
+  box-shadow: 4px 8px 5px 0px #222;
+  position: relative;
+}
+
+.word-of > div::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -40px;
+  width: 60px;
+  height: 40px;
+  background: #f9f9f9;
+  border: 2px solid #222;
+  border-top-right-radius: 40px 40px;
+  border-bottom-left-radius: 60px 40px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 4px 5px 0px #222;
+  z-index: 0;
+}
+
+.word-of > div:nth-child(2)::after {
+  left: auto;
+  right: 40px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 40px 40px;
+  border-bottom-right-radius: 60px 40px;
+  transform: rotate(10deg);
+}
+
+h5 {
+  padding-left: 25px;
+}
+
 /* Contact page */
 .social-links a img {
   width: 50px;
@@ -19,4 +69,17 @@ nav .social-icon {
 
 .social-links a {
   text-decoration: none;
+}
+
+/*Common styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-align: center;
 }
