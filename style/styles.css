@@ -1,29 +1,31 @@
-/* Navbar */
-nav .logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-left: 10px;
+/* Common styles - Mobile first */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-nav .social-icon {
-  width: 24px;
-  height: 24px;
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-/* home page */
+p {
+  line-height: 2;
+  text-align: justify;
+}
+
 .presentation > p {
-  padding: 50px 0;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  background-color: coral;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 20px 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #222;
 }
 
 .word-of > div {
-  padding: 50px 50px;
-  margin: 150px 100px;
+  padding: 30px 10px;
+  margin: 50px 10px;
   background-color: #f9f9f9;
   border: 2px solid #222;
   border-radius: 30px 30px 30px 60px;
@@ -34,10 +36,10 @@ nav .social-icon {
 .word-of > div::after {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -40px;
-  width: 60px;
-  height: 40px;
+  left: 20px;
+  bottom: -30px;
+  width: 40px;
+  height: 30px;
   background: #f9f9f9;
   border: 2px solid #222;
   border-top-right-radius: 40px 40px;
@@ -49,7 +51,7 @@ nav .social-icon {
 
 .word-of > div:nth-child(2)::after {
   left: auto;
-  right: 40px;
+  right: 20px;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 40px 40px;
@@ -58,21 +60,22 @@ nav .social-icon {
 }
 
 h5 {
-  padding-left: 25px;
+  padding-left: 10px;
 }
 
 /* Contact page */
 .social-links {
   display: flex;
-  justify-content: center;
-  gap: 150px;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .social-links a img {
-  width: 50px;
-  margin-top: 20px;
+  width: 40px;
+  margin-top: 10px;
 }
 
 .social-links a {
@@ -83,29 +86,147 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   gap: 10px;
 }
 
 .localisation {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
-}
-
-/*Common styles */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
   margin-bottom: 50px;
-  text-align: center;
 }
 
-p {
-  line-height: 2;
+/* Pension page */
+.img-pension {
+  width: 60%;
+}
+
+.pension-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pension-options {
+  margin-bottom: 60px;
+  border: 1px solid #222;
+  padding: 25px 10px;
+}
+
+.pension-options table {
+  table-layout: fixed;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+
+.pension-options table td,
+.pension-options table th {
+  width: 50%;
+  word-break: break-word;
+}
+
+/* Navbar */
+nav .logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+nav .social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .presentation > p {
+    padding: 50px 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .word-of > div {
+    padding: 50px 50px;
+    margin: 150px 100px;
+  }
+
+  .word-of > div::after {
+    left: 40px;
+    bottom: -40px;
+    width: 60px;
+    height: 40px;
+  }
+
+  .word-of > div:nth-child(2)::after {
+    right: 40px;
+  }
+
+  h5 {
+    padding-left: 25px;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+  .social-links a img {
+    width: 50px;
+    margin-top: 20px;
+  }
+
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .localisation {
+    margin-bottom: 100px;
+  }
+
+  .img-pension {
+    width: 20%;
+  }
+
+  .pension-details {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .pension-options {
+    margin-bottom: 150px;
+    padding: 50px 25px;
+  }
+
+  .pension-options table {
+    margin-bottom: 100px;
+  }
+
+  nav .logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  nav .social-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
