@@ -97,10 +97,6 @@ h5 {
 }
 
 /* Pension page */
-.img-pension {
-  width: 60%;
-}
-
 .pension-details {
   display: flex;
   flex-direction: column;
@@ -126,6 +122,26 @@ h5 {
 .pension-options table th {
   width: 50%;
   word-break: break-word;
+}
+
+.img-mobile {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto 0 auto;
+  transform: none;
+}
+
+/* Action page */
+.div-action {
+  border: 1px solid #222;
+  margin: 100px 0;
+}
+
+.div-action > p {
+  padding: 20px 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* Navbar */
@@ -210,6 +226,10 @@ nav .social-icon {
     margin-bottom: 50px;
   }
 
+  .pension-ul {
+    margin-left: 50px;
+  }
+
   .pension-options {
     margin-bottom: 150px;
     padding: 50px 25px;
@@ -217,6 +237,14 @@ nav .social-icon {
 
   .pension-options table {
     margin-bottom: 100px;
+  }
+
+  .img-pension1 {
+    transform: rotate(-25deg);
+  }
+  .img-pension2 {
+    width: 200px;
+    margin-top: 25px;
   }
 
   nav .logo {
@@ -228,5 +256,30 @@ nav .social-icon {
   nav .social-icon {
     width: 24px;
     height: 24px;
+  }
+
+  .div-action {
+    border: 1px solid #222;
+    margin: 100px 0;
+  }
+
+  .div-action > p {
+    padding: 20px 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .multiple-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }
