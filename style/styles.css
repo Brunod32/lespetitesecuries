@@ -209,6 +209,7 @@ nav .logo {
 nav .social-icon {
   width: 20px;
   height: 20px;
+  margin-left: 0;
 }
 
 footer {
