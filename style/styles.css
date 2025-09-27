@@ -20,6 +20,10 @@ h2 {
   text-align: center;
 }
 
+.img-home {
+  max-width: 200px;
+}
+
 p {
   line-height: 2;
   text-align: justify;
@@ -29,7 +33,6 @@ p {
   padding: 20px 10px;
   margin-top: 50px;
   margin-bottom: 50px;
-  border: 1px solid var(--border-color);
   background-color: var(--primary-color);
 }
 
@@ -75,6 +78,8 @@ h5 {
 
 .title .slogan {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
 img,
@@ -85,6 +90,15 @@ img,
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-break {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 100px;
 }
 
 .multiple-images {
@@ -143,7 +157,6 @@ iframe {
 
 .pension-options {
   margin-bottom: 60px;
-  border: 1px solid var(--border-color);
   background-color: var(--primary-color);
   padding: 25px 10px;
 }
@@ -154,6 +167,7 @@ iframe {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 50px;
+  border: 1px solid var(--border-color);
 }
 
 .pension-options table td,
@@ -172,7 +186,6 @@ iframe {
 
 /* Action page */
 .div-action {
-  border: 1px solid var(--border-color);
   margin: 100px 0;
 }
 
@@ -184,10 +197,11 @@ iframe {
 
 /* Navbar */
 nav .logo {
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-left: 5px;
+  border: 1px solid var(--border-color);
 }
 
 nav .social-icon {
@@ -195,7 +209,28 @@ nav .social-icon {
   height: 20px;
 }
 
-/* Desktop styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-color: var(--secondary-color);
+  padding: 0 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer-img {
+  height: 120px;
+  width: auto;
+}
+
+/****** DESKTOP STYLES ******/
 @media screen and (min-width: 769px) {
   h1 {
     font-size: 2.5rem;
@@ -221,11 +256,15 @@ nav .social-icon {
     margin-bottom: 50px;
   }
 
+  .img-home {
+    max-width: 300px;
+  }
+
   .presentation > p {
     background-color: var(--primary-color);
     padding: 50px 100px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .word-of > div {
@@ -263,6 +302,8 @@ nav .social-icon {
 
   .contact {
     margin-bottom: 100px;
+    padding: 50px 0;
+    background-color: var(--primary-color);
   }
 
   .localisation {
@@ -312,9 +353,9 @@ nav .social-icon {
   }
 
   .div-action {
-    border: 1px solid var(--border-color) 222;
     margin: 100px 0;
     padding-bottom: 20px;
+    background-color: var(--primary-color);
   }
 
   .div-action > p {
@@ -335,5 +376,16 @@ nav .social-icon {
     display: flex;
     justify-content: center;
     gap: 20px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: var(--secondary-color);
+    padding: 0px 15%;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
