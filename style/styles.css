@@ -187,6 +187,8 @@ iframe {
 /* Action page */
 .div-action {
   margin: 100px 0;
+  padding-bottom: 20px;
+  background-color: var(--primary-color);
 }
 
 .div-action > p {
@@ -228,6 +230,26 @@ footer {
 .footer-img {
   height: 120px;
   width: auto;
+}
+
+/* Button back to top */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--accent-color);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bi-chevron-up::before {
+  color: var(--background-color);
 }
 
 /****** DESKTOP STYLES ******/
@@ -350,12 +372,6 @@ footer {
   nav .social-icon {
     width: 24px;
     height: 24px;
-  }
-
-  .div-action {
-    margin: 100px 0;
-    padding-bottom: 20px;
-    background-color: var(--primary-color);
   }
 
   .div-action > p {
